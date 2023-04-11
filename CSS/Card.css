@@ -1,0 +1,84 @@
+.Titulo {
+  display: flex;
+  margin: 50px auto;
+  margin-top: 80px;
+  text-align: center;
+  flex-direction: column; 
+}
+
+h2 {    
+  color: #FF3A2C;
+  font-size: 50px;
+}
+
+.Categorias {
+  text-align: center;
+  margin: 1rem auto;
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+
+.Categorias button {
+  background-color: #DA9C89;
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 32px;
+  border-width: 0px;
+  width: 240px;
+  height: 180px;
+  cursor: pointer;
+  margin-top: 50px;
+  margin: 15px;
+}
+
+/*.Caseiro {
+  background-image: url("/Projeto Extensionista/src/Ícones/Bolo\ Caseiro.jpg");
+  background-size: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Festa {
+  background-image: url("/Projeto Extensionista/src/Ícones/Bolo\ de\ Festa.jpg");
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Pães {
+  background-image: url("/Projeto Extensionista/src/Ícones/Pães.jpg");
+  background-size: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Quitanda {
+  background-image: url("/Projeto Extensionista/src/Ícones/Quitandas.jpg");
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Sazonais {
+  background-image: url("/Projeto Extensionista/src/Ícones/Sazonal.jpg");
+  background-size: 250px;
+  background-repeat: no-repeat;
+  background-position: center;
+}*/
+
+.Categorias button:hover {
+  transition: all 0.3s ease-in-out;
+}
+
+.Categorias a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 180px;
+  text-decoration: none;
+  background-color: transparent;
+  color: white;
+}

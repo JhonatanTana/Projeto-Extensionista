@@ -1,0 +1,58 @@
+.Titulo {
+    display: flex;
+    margin: 30px;
+    margin-top: 5em;
+    margin-bottom: 7em;
+    text-align: center;
+    flex-direction: column; 
+  }
+.Titulo h2 {
+    color: #FF3A2C;
+    font-size: 50px;
+}
+
+.Produtos img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+}
+
+.Produtos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+}
+
+.Prod {
+    border: 3px solid #491B19;
+    border-radius: 10px;
+    display: flex;
+    padding: 5px;
+    margin: 10px;
+    width: 390px;
+    height: 200px;
+}
+
+.Produtos label {
+    font-size: 14px;
+}
+
+.Descrição {
+    padding: 10px 20px 10px 20px;
+    line-height: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.Descrição h2 {
+    display: flex;
+    font-size: 20px;
+}
+
+.Descrição p {
+    font-size: 12px;
+    font-weight: bold;
+}

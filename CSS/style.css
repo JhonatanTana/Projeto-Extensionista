@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+
+*{
+  font-family: League Spartan;
+  background-color: #F8DAD0;
+  margin: 0;
+  padding: 0;
+}
+
+main img {
+  position: relative;
+  display: flex;
+  padding: 0;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  margin-top: 5px;
+}
+
+h1 {
+  display: flex;
+  background: #491B19;
+  margin-top: 15px;
+}
+
+h1 button, h1 p {
+  font-size: 20px;
+  display: flex;
+  margin: 1rem auto;
+  font-weight: bold;
+  border-width: 0px;
+  background: #491B19;
+  color: white;
+  align-items: center;
+  border: none;
+  position: relative;
+  text-decoration: none;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+h1 button::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+h1 button:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+h1 button:hover {
+  cursor: pointer;
+}
+
+h1 a{
+  color: white;
+  background: #491b19;
+  text-decoration: none;
+}
+
+.Footer{
+  background-color: #491B19;
+  padding: 0;
+  margin-top: 10rem;
+  overflow: hidden;
+  display: block;
+  clear: both;
+  color: white;
+  padding-top: 30px;
+}
+  
+.Social, .Midia, .Facebook, .Instagram, .Whatsapp {
+  align-content: center;
+  background-color: #491B19;
+  text-align: center;
+  display: contents;
+}
+
+.Midia {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+h4 {
+  background-color: #491B19;
+}
+
+.Social h4{
+  display: flex;
+  justify-content: center;
+  background-color: #491B19;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+  
+.Midia a {
+  text-decoration: none;
+  background-color: #491B19;
+  position: relative;
+}
+  
+.Midia img {
+  width: 30px;
+  background-color: #491B19;
+  margin: 5px;
+  align-content: center;
+}
+
+.Facebook ::before, .Whatsapp ::after {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  content: '';
+  height: 1px;
+  width: 100px;
+  bottom: 50%;
+  right: 50px;
+  background: white;
+  margin-right: 10px;
+}
+
+.Whatsapp ::after {
+  left: 50px;
+  margin-left: 10px;
+}
