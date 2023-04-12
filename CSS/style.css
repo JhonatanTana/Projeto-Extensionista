@@ -198,14 +198,14 @@ h4 {
 
 .Info {
   background-color: #491B19;
-  padding: 5px 5px 15px 15px;
+  padding: 15px;
   display: flex;
   justify-content: center;
 }
 
 .Info *{
   background-color: #491B19;
-  padding: 3px;
+  padding: 5px;
   display: flex;
   align-items: center;
 }
