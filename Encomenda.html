@@ -11,18 +11,88 @@
 <body>
     <main>
         <img src="src\Logo Bolo do Bem_2.png" alt="Logo">
+    
+        <h1>
+            <button><a href="Index.html">Início</a></button> 
+            <button><a href="Cardápio.html">Cardápio</a></button> 
+            <button><a href="Encomenda.html">Encomende o seu</a></button> 
+            <button><a href="Cursos.html"> Cursos</a></button> 
+            <button><a href="História.html"> História</a></button> 
+        </h1>
     </main>
-    
-    <h1>
-        <button><a href="Index.html">Início</a></button> 
-        <button><a href="Cardápio.html">Cardápio</a></button> 
-        <button><a href="Encomenda.html">Encomende o seu</a></button> 
-        <button><a href="Cursos.html"> Cursos</a></button> 
-        <button><a href="História.html"> História</a></button> 
-    </h1>
 
+    <form>
+        <label> 
+            <p> Produto </p>
+            <div class="form-produto">
+                <span>Produto</span>
+                    <select name="produtos" id="">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                    </select>
+            </div>
+        </label>
+        <label> 
+            <p> Dados Pessoais </p>
+            <div class="form-name">
+                <span>Nome</span>
+                <input type="text" id="name" name="name">
+                <span>Telefone</span>
+                <input type="tel" id="" name="">
+            </div>
+        </label>
+        <label> 
+            <p> Forma de Recebimento </p>
+            <div class="radio">
+                <div>
+                    <input type="radio" id="" name="recebimento"> 
+                    <label> Retirada no Local </label>
+                </div>
+                <div> 
+                    <input type="radio" id="" name="recebimento"> 
+                    <label> Entrega </label>
+                </div>
+            </div>
+        </label>
+        <label> 
+            <p> Endereço de Entrega </p>
+            <div class="form-entrega">
+                <span>Rua</span>
+                <input type="text" id="" name="rua">
+                <span>Numero</span>
+                <input type="text" id="" name="numero">
+                <span>Bairro</span>
+                <input type="text" id="" name="bairro">
+                <span>Cidade</span>
+                <input type="text" id="" name="cidade">
+            </div>
+        </label>
+        <label> 
+            <p> Forma de Pagamento </p>
+            <div class="radio">
+                <div>
+                    <input type="radio" id="credito" name="pagamento"> 
+                    <label> Cartão de Crédito </label>
+                </div>
+                <div>
+                    <input type="radio" id="debito" name="pagamento"> 
+                    <label> Cartão de Débito </label>
+                </div>
+                <div>
+                    <input type="radio" id="pix" name="pagamento">
+                    <label> Pix </label>
+                </div>
+                <div>
+                    <input type="radio" id="pagamento" name="pagamento">
+                    <label> Dinheiro </label>
+                </div>  
+            </div>
+        </label>
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
 
-    
     <div class="Footer">
         <div class="Social">
             <h4> Siga Nossas Redes Sociais </h4>

@@ -1,0 +1,135 @@
+:root {
+    --vinho: #491B19;
+    --rosa: #DA9C89;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    font-size: 18px;
+    position: relative;
+    left: 30px;
+    margin: 0;
+    top: 30px;
+}
+
+.form-encom, form span {
+    display: flex;
+}
+
+label p {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+label span {
+    font-weight: bold;
+    padding: 5px;
+    position: relative;
+    left: 20px;
+}
+
+label [type="text"], label [type="tel"], select {
+    position: relative;
+    margin: 5px;
+    width: 180px;
+    height: 35px;
+    border-radius: 22px;
+    left: 30px;
+    background-color: #da9c8985;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+form p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    background-color: var(--vinho);
+    border-radius: 32px;
+    width: 220px;
+    height: 30px;
+}   
+
+.form-name, .form-produto {
+    position: relative;
+    left: 30px;
+    height: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.form-entrega {
+    display: flex;
+    flex-wrap: wrap;
+    height: 150px;
+    flex-direction: column;
+    width: 350px;
+    position: relative;
+    left: 30px;
+}
+
+.radio {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100px;
+    position: relative;
+    left: 40px;
+}
+
+.radio label {
+    position: relative;
+    font-weight: bold;
+}
+
+.radio div {
+    margin: 10px;
+}
+
+@media screen and (max-width: 600px){
+    form p::after {
+        width: 0px;
+    }
+
+    form, form label, .form-encom {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    
+    .radio {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .radio label {
+        position: relative;
+        left: 25px;
+        bottom: 15px;
+    }
+
+    .form-entrega{
+        width: 0    ;
+    }
+}
+
+/*form p::after {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    content: '';
+    height: 2px;
+    width: 300px;
+    left: 280px;
+    background: var(--rosa);
+    margin-right: 10px;
+}*/
