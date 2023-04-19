@@ -7,30 +7,60 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/inicio.css">
     <title>Início - Bolo do Bem</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 </head>
 <body>
 
     <main>
         <img src="src\Logo Bolo do Bem_2.png" alt="Logo">
-
-        <h1>
-            <button><a href="Index.html">Início</a></button> 
-            <button><a href="Cardápio.html">Cardápio</a></button> 
-            <button><a href="Encomenda.html">Encomende o seu</a></button> 
-            <button><a href="Cursos.html"> Cursos</a></button> 
-            <button><a href="História.html"> História</a></button> 
-        </h1>
+        <div class="checkbox">
+            <input type="checkbox" id="toggler">
+            <label for="toggler"><img src="./src/Ícones/menu-hamburguer.png" alt=""></label>
+        </div>
+        <div class="menu">
+            <ul class="list">
+                <li><a href="Index.html">Início</a></button> 
+                <li><a href="Cardápio.html">Cardápio</a></button> 
+                <li><a href="Encomenda.html">Encomende o seu</a></button> 
+                <li><a href="Cursos.html"> Cursos</a></button> 
+                <li><a href="História.html"> História</a></button> 
+            </ul>
+        </div>
     </main>
     
-    <h2>
+    <!--<h2>
         <span> Venha conhecer nossos produtos e ajudar a fazer o bem </span>
-    </h2>
+    </h2>-->
 
-    <div class="Banner">
-        <img src="src/Fotos/Img 1.jpg" alt="Imagem 1">
-        <img src="src/Fotos/Img 2.jpg" alt="Imagem 2">
-        <img src="src/Fotos/Img 3.jpg" alt="Imagem 3">
-        <img src="src/Fotos/Img 4.jpg" alt="Imagem 4">
+    <div class="splide bg-secundary">
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide">
+                      <img src="./src/Fotos/Bolo de Laranja.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                      <img src="./src/Fotos/Bolo de Limão.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                      <img src="./src/Fotos/Bolo de Café.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="./src/Fotos/Bolo de Paçoca.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                      <img src="./src/Fotos/Bolo de Fuba com Pamonha.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                      <img src="./src/Fotos/Rocambole.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                      <img src="./src/Fotos/Bolo de Pão de Mel.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="./src/Fotos/Bolo de Milho sem Farinha.jpg" alt="">
+                  </li>
+              </ul>
+        </div>
     </div>
 
     <div class="Vendidos">
@@ -96,6 +126,16 @@
                 </label>
             </div>
         </div>
-    </div> 
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+        var splide = new Splide('.splide',
+            {
+                type   : 'loop',
+                perPage: 5,
+                focus  : 'center',
+              } );
+            splide.mount();
+    </script> 
 </body>
 </html>

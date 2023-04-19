@@ -16,22 +16,24 @@ h2 span {
     height: 35px;
 }
 
-.Banner img{
-    margin-top: 40px !important;
+.splide__slide img {
     width: 300px;
-    height: 300px;
-    display: inline;
-    position: relative;
-    margin: -1.7px;
-    border-radius: 20px;
+    margin: 0;
+    padding: 0;
 }
 
-.Banner {
-    text-align: center;
+#splide01 {
+    margin-top: 50px;
 }
 
-.Banner a {
-    text-decoration: none;
+.splide__pagination, .splide__pagination li, .splide__arrow  {
+    background-color: transparent !important;
+}
+
+.splide__arrow svg {
+    background: transparent;
+    width: 25px !important;
+    height: 25px !important;
 }
 
 .Vendidos {
@@ -118,4 +120,26 @@ h2 span {
 .MaisVendidos1 {
     border-color: #491B19;
     border-width: 5px;
+}
+
+@media screen and (max-width:600px) {
+    .splide__list{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .splide__slide img {
+        display: flex;
+        position: relative;
+        left: 10px;
+    }
+
+    ul li {
+        background-color: #F8DAD0;
+    }
+
+    .splide__pagination, .splide__pagination li, .splide__arrow {
+        display: flex;
+        flex-direction: row;
+    }
 }

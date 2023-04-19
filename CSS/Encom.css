@@ -76,7 +76,7 @@ form p {
     left: 30px;
 }
 
-.radio {
+.radio, .radio-1 {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -86,12 +86,12 @@ form p {
     left: 40px;
 }
 
-.radio label {
+.radio label, .radio-1 label {
     position: relative;
     font-weight: bold;
 }
 
-.radio div {
+.radio div, .radio-1 div {
     margin: 10px;
 }
 
@@ -147,31 +147,50 @@ form p {
 
 @media screen and (max-width: 600px){
     form p::after {
-        width: 0px;
+        width: 100%;
     }
 
     form, form label, .form-encom {
         display: flex;
         flex-direction: column;
         position: relative;
+        left: 0;
+        padding: 0;
     }
-    
-    .radio {
+
+    .form-name {
+        height: 150px;
+        width: 200px;
+    }
+
+    .form-entrega {
+        height: 300px;  
+    }
+
+    .radio-1 {
+        width: 180px;
+        height: 110px !important;
+    }
+
+    .radio, .radio-1  {
         display: flex;
         flex-wrap: wrap;
         align-items: flex-start;
         flex-direction: column;
-        width: 300px;
-        height: 120px;
+        height: 230px;
         position: relative;
-        left: 40px;
     }
     
-    .radio label {
+    .radio label, .radio-1 label {
         position: relative;
         font-weight: bold;
         left: 25px;
         bottom: 17px;
+    }
+
+    .valor {
+        width: 200px;
+        height: 60px;
     }
 }
 
