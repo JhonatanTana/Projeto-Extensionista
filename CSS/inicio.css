@@ -16,14 +16,21 @@ h2 span {
     height: 35px;
 }
 
+.splide ul li {
+    background: #F8DAD0;
+    margin: 50px 0 0 0;
+    padding: 0;
+    cursor: auto;
+}
+
+.splide ul li::before {
+    visibility: hidden;
+}
+
 .splide__slide img {
     width: 300px;
     margin: 0;
     padding: 0;
-}
-
-#splide01 {
-    margin-top: 50px;
 }
 
 .splide__pagination, .splide__pagination li, .splide__arrow  {
@@ -91,13 +98,13 @@ h2 span {
     padding: 0;
 }
 
-.MaisVendidos1, .MaisVendidos2, .MaisVendidos3, .MaisVendidos4 {
+.Mais-Vendidos {
     margin-left: 65px;
     margin-right: 65px;
 }
 
 .MaisVendidos img{
-    padding: 2px;
+    padding: 0;
     border: 5px solid #491B19;
     border-radius: 150px;
     width: 200px;
@@ -112,14 +119,9 @@ h2 span {
     margin: 20px auto;
     color: white;
     background-color: #491B19;
-    width: 90px;
-    height: 30px;
+    width: 135px;
+    height: 40px;
     border-radius: 32px;
-}
-
-.MaisVendidos1 {
-    border-color: #491B19;
-    border-width: 5px;
 }
 
 @media screen and (max-width:600px) {
@@ -132,14 +134,35 @@ h2 span {
         display: flex;
         position: relative;
         left: 10px;
+        width: 150px;
     }
 
-    ul li {
+    .splide__slide {
+        width: auto;
+    }
+
+    .splide ul li {
         background-color: #F8DAD0;
+        margin: 0;
+        padding: 0;
     }
 
     .splide__pagination, .splide__pagination li, .splide__arrow {
         display: flex;
         flex-direction: row;
+    }
+
+    .Vendidos {
+        display: flex;
+    }
+
+    .Vendidos span:before, .Vendidos span:after {
+        width: 0    ;
+    }
+
+    .MaisVendidos, .Vendidos, h3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }

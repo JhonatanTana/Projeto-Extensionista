@@ -79,7 +79,7 @@ main label {
     display: flex;
     flex-direction: column;
     background: #491B19;
-    margin-top: 15px;
+    margin-top: 0px;
   }
   
   ul li {
@@ -150,24 +150,28 @@ main label {
     display: inline-flex;
     align-items: center;
     cursor: pointer;
+    background-color: #491B19;
+    justify-content: flex-end;
   }
 
   .checkbox {
     margin: 20px 0px;
     background-color: #491B19;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    width: auto;
   }
 
   #toggler:checked ~ .menu {
     max-height: 100%;
+    overflow: visible;
   }
 }
 
 .Footer{
   background-color: #491B19;
+  margin-top: 5rem;
   padding: 0;
-  margin-top: 10rem;
   overflow: hidden;
   display: block;
   clear: both;

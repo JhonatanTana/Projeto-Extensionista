@@ -7,22 +7,23 @@
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/produtos.css">
     <title>Bolos de Festa - Bolo do Bem</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 </head>
 <body>
     <main>
         <img src="../src/Logo Bolo do Bem_2.png" alt="Logo">
         <div class="checkbox">
             <input type="checkbox" id="toggler">
-            <label for="toggler"><img src="./src/Ícones/menu-hamburguer.png" alt=""></label>
-        </div>
-        <div class="menu">
-            <ul class="list">
-                <li><a href="../Index.html">Início</a></button> 
-                <li><a href="../Cardápio.html">Cardápio</a></button> 
-                <li><a href="../Encomenda.html">Encomende o seu</a></button> 
-                <li><a href="../Cursos.html"> Cursos</a></button> 
-                <li><a href="../História.html"> História</a></button> 
+            <label for="toggler"><img src="../src/Ícones/menu-hamburguer.png" alt=""></label>
+            <div class="menu">
+                <ul class="list">
+                    <li><a href="../Index.html">Início</a></button> 
+                    <li><a href="../Cardápio.html">Cardápio</a></button> 
+                    <li><a href="../Encomenda.html">Encomende o seu</a></button> 
+                    <li><a href="../Cursos.html"> Cursos</a></button> 
+                    <li><a href="../História.html"> História</a></button> 
                 </ul>
+            </div>
         </div>
     </main>
 
@@ -30,7 +31,7 @@
         <h2> Bolos de Festa</h2>
     </div>
 
-    <ul class="Produtos">
+    <!--<ul class="Produtos">
         <li class="Prod">
             <img src="../src/Fotos/Bento Cake.jpg" alt="">
             <div class="Descrição">
@@ -59,7 +60,47 @@
                 <label> Server 10 fatias. <br> Possui uma casquinha de chocolate, uma camada de recheio, cobertura e decoração confeitada. </label>
             </div>
         </li>
-    </ul>
+    </ul>-->
+
+    <div class="splide bg-secundary">
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide">
+                      <img src="../src/Fotos/Festa 2.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                      <img src="../src/Fotos/Festa 3.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                      <img src="../src/Fotos/Festa 4.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="../src/Fotos/Festa 5.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                      <img src="../src/Fotos/Festa 6.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                      <img src="../src/Fotos/Festa 7.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                      <img src="../src/Fotos/Festa 8.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="../src/Fotos/Festa 9.jpg" alt="">
+                  </li>
+              </ul>
+        </div>
+    </div>
+
+    <div class="btm">
+        <div class="btm-orca">
+            <a href="https://api.whatsapp.com/send/?phone=5535998155714&text&type=phone_number&app_absent=0" target="_blank">
+                <img src="../src/Ícones/whatsapp II.png" alt="">
+                <label> Faça seu Orçamento </label>
+            </a>
+        </div>
+    </div>
 
     <div class="Footer">
         <div class="Social">
@@ -101,5 +142,23 @@
             </div>
         </div>
     </div> 
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+        var splide = new Splide('.splide', {
+          type: 'loop',
+          focus: 'center',
+          perPage: 5,
+          breakpoints: {
+            800: {
+			perPage: 3,
+		        },
+		    600: {
+			perPage: 2,
+		        },
+            }
+        });
+        splide.mount();
+    </script> 
 </body>
 </html>

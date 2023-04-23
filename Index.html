@@ -16,15 +16,15 @@
         <div class="checkbox">
             <input type="checkbox" id="toggler">
             <label for="toggler"><img src="./src/Ícones/menu-hamburguer.png" alt=""></label>
-        </div>
-        <div class="menu">
-            <ul class="list">
-                <li><a href="Index.html">Início</a></button> 
-                <li><a href="Cardápio.html">Cardápio</a></button> 
-                <li><a href="Encomenda.html">Encomende o seu</a></button> 
-                <li><a href="Cursos.html"> Cursos</a></button> 
-                <li><a href="História.html"> História</a></button> 
-            </ul>
+            <div class="menu">
+                <ul class="list">
+                    <li><a href="Index.html">Início</a></button> 
+                    <li><a href="Cardápio.html">Cardápio</a></button> 
+                    <li><a href="Encomenda.html">Encomende o seu</a></button> 
+                    <li><a href="Cursos.html"> Cursos</a></button> 
+                    <li><a href="História.html"> História</a></button> 
+                </ul>
+            </div>
         </div>
     </main>
     
@@ -64,25 +64,33 @@
     </div>
 
     <div class="Vendidos">
-        <span><p> Mais Vendidos </p></span>
+        <span><p> Nossas Delícias </p></span>
     </div>
 
     <div class="MaisVendidos">
-        <div class="MaisVendidos1">
-            <img src="src/Fotos/Vend 1.jpg" alt="MaisVendidos 1">
-            <h3>Bolo 1</h3>
+        <div class="Mais-Vendidos">
+                <a href="./Categoria/Bolos.html">
+                    <img src="./src/Ícones/Bolo Caseiro ll.jpg" alt="Delicia 1">
+                </a>
+            <h3>Bolos Caseiros</h3>
         </div>  
-        <div class="MaisVendidos2">
-            <img src="src/Fotos/Vend 2.jpg" alt="MaisVendidos 2">
-            <h3>Bolo 2</h3>
+        <div class="Mais-Vendidos">
+                <a href="./Categoria/Festa.html">
+                    <img src="./src/Ícones/Bolo de Festa.jpg" alt="Delicia 2">
+                </a>
+            <h3>Bolo de Festa</h3>
         </div>         
-        <div class="MaisVendidos3">
-            <img src="src/Fotos/Vend 3.jpg" alt="MaisVendidos 3">
-            <h3>Bolo 3</h3>
+        <div class="Mais-Vendidos">
+                <a href="./Categoria/Paes.html">
+                    <img src="./src/Ícones/Pães.jpg" alt="Delicia 3">
+                </a>
+            <h3> Pães Caseiros </h3>
         </div>        
-        <div class="MaisVendidos4">
-            <img src="src/Fotos/Vend 4.jpg" alt="MaisVendidos 4">
-            <h3>Bolo 4</h3>
+        <div class="Mais-Vendidos">
+                <a href="./Categoria/Quitanda.html">
+                    <img src="./src/Ícones/Quitandas ll.jpg" alt="Delicia 4">
+                </a>
+            <h3> Quitandas </h3>
         </div> 
     </div>
 
@@ -129,13 +137,20 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script>
-        var splide = new Splide('.splide',
-            {
-                type   : 'loop',
-                perPage: 5,
-                focus  : 'center',
-              } );
-            splide.mount();
+        var splide = new Splide('.splide', {
+          type: 'loop',
+          focus: 'center',
+          perPage: 5,
+          breakpoints: {
+            800: {
+			perPage: 3,
+		        },
+		    600: {
+			perPage: 2,
+		        },
+            }
+        });
+        splide.mount();
     </script> 
 </body>
 </html>
