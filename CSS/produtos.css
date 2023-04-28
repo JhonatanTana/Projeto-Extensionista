@@ -81,6 +81,8 @@
 
 .btm-orca img {
     background: transparent;
+    width: 32px;
+    padding: 0 10px;
 }
 
 @media screen and (max-width:600px) {
